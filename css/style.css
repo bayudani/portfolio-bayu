@@ -76,6 +76,7 @@ h2 {
     font-size: var(--h2-font-size);
     color: var(--secondary-color);
     letter-spacing: -3px;
+    word-spacing: 5px;
 }
 
 h3 {
@@ -262,6 +263,7 @@ strong {
     background: transparent;
     border-width: 2px;
     border-style: solid;
+    border-color:var(--white-color) ;
     color: var(--white-color);
     padding: 8px 22px;
 }
@@ -535,7 +537,7 @@ strong {
     min-width: 550px;
     /* left: 15rem; */
     filter: brightness(200%);
-    filter: contrast(80%);
+    filter: contrast(75%);
 }
 
 .hero svg {
@@ -685,13 +687,13 @@ ients-image:hover {
 
 /*---------------------------------------
     PROJECTS              
-  -----------------------------------------*/
-.project{
+  /* -----------------------------------------*/
+ .Project{
     display: flex;
     gap: 50px;
     align-items: center;
     justify-content: center;
-}
+} 
   .projects-thumb {
     background: var(--section-bg-color);
     border: 2px solid var(--white-color);
@@ -966,6 +968,7 @@ ients-image:hover {
 
     .hero-image {
         min-width: 650px;
+        width: 50%;
     }
 
     .hero-title,
@@ -973,6 +976,13 @@ ients-image:hover {
         font-size: var(--h2-font-size);
     }
 }
+
+/* @media screen and (min-width:990) {
+    
+    .hero-image{
+        width: 75%;
+    }
+} */
 
 @media screen and (max-width: 991px) {
     h1 {
@@ -1091,6 +1101,7 @@ ients-image:hover {
         margin-top: 0;
         margin-bottom: 32px;
     }
+    
 
     .contact-info {
         border-radius: 0 0 var(--border-radius-small) var(--border-radius-small);
